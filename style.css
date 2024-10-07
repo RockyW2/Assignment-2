@@ -11,25 +11,26 @@ body {
 .bgImg{
     width: 1250px;
     height: 750px;
+    top: 100px;
 }
 .button {
-    position: absolute; /* set button to an absolute position */
-    transform: translate(-50%, -50%); /* center the button */
-    z-index: 2; /* set a higher z-index than the image */
-    background-color: #007bff; /* set your desired background color */
-    color: #fff; /* set your desired text color */
-    border: none; /* remove button border */
-    padding: 10px 20px; /* set your desired padding */
-    cursor: pointer; /* change mouse cursor on hover */
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+    background-color: rgba(0,0,0,0.1); 
+    border-width: 3px; 
+    border-color: black;
+    padding: 10px 20px; 
+    cursor: pointer; 
     width: 200px;
+    font-size: 20px; 
   }
 
 .log{
-    top: 40%; /* adjust the top position of the button */
-    left: 50%; /* adjust the left position of the button */
+    top: 40%; 
+    left: 50%; 
 }
 .sign{
     
-    top: 50%; /* adjust the top position of the button */
-    left: 50%; /* adjust the left position of the button */
-}
+    top: 50%;
+    left: 50%;
