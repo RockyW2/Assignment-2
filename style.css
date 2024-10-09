@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: black;
 }
 
 .image-container{
@@ -9,28 +9,65 @@ body {
 }
 
 .bgImg{
+    position: absolute;
     width: 1250px;
     height: 750px;
-    top: 100px;
+    top: 75px; 
 }
+
 .button {
     position: absolute; 
     transform: translate(-50%, -50%); 
     z-index: 2; 
-    background-color: rgba(0,0,0,0.1); 
+    background-color: rgba(0,0,0,0.5); 
     border-width: 3px; 
     border-color: black;
     padding: 10px 20px; 
     cursor: pointer; 
     width: 200px;
     font-size: 20px; 
-  }
+    color: white;
+}
 
-.log{
-    top: 40%; 
+#LoginButton{
+    top: 50%; 
     left: 50%; 
 }
-.sign{
+
+#SignUpButton{
     
-    top: 50%;
+    top: 65%;
     left: 50%;
+}
+
+#Title{
+    position: absolute;
+    left: 30%;
+    font-size: 40px;
+}
+
+.header-content{
+    position: absolute;
+    top: 0.0001%;
+    color: white;
+    background-color: rgba(0,0,0,0); 
+    border-width: 0px;
+}
+
+.header{
+    position: relative;
+    width: 1250px;
+    height: 50px;
+}
+
+#Support{
+    position: relative;
+    left: 80%;
+    font-size: 30px;
+}
+
+#About{
+    position: relative;
+    left: 75%;
+    font-size: 30px;
+}
