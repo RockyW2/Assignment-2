@@ -2,8 +2,8 @@ body {
     background-color: black;
 }
 
-.image-container{
-    position: relative;
+.hero{
+    position: absolute;
     width: 1250px;
     height: 750px;
 }
@@ -12,7 +12,7 @@ body {
     position: absolute;
     width: 1250px;
     height: 750px;
-    top: 75px; 
+    top: 25px; 
 }
 
 .button {
@@ -35,7 +35,6 @@ body {
 }
 
 #SignUpButton{
-    
     top: 65%;
     left: 50%;
 }
@@ -70,4 +69,8 @@ body {
     position: relative;
     left: 75%;
     font-size: 30px;
+}
+
+.footer-content{
+    color:white;
 }
