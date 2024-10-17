@@ -1,76 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: black;
 }
 
-.hero{
-    position: absolute;
-    width: 1250px;
-    height: 750px;
-}
-
-.bgImg{
-    position: absolute;
-    width: 1250px;
-    height: 750px;
-    top: 25px; 
-}
-
-.button {
-    position: absolute; 
-    transform: translate(-50%, -50%); 
-    z-index: 2; 
-    background-color: rgba(0,0,0,0.5); 
-    border-width: 3px; 
-    border-color: black;
-    padding: 10px 20px; 
-    cursor: pointer; 
-    width: 200px;
-    font-size: 20px; 
+.header{
+    display: flex;
+    padding: 20px;
     color: white;
-}
-
-#LoginButton{
-    top: 50%; 
-    left: 50%; 
-}
-
-#SignUpButton{
-    top: 65%;
-    left: 50%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #Title{
-    position: absolute;
-    left: 30%;
+    text-align: center;
     font-size: 40px;
+    flex-grow: 1;
 }
 
-.header-content{
-    position: absolute;
-    top: 0.0001%;
-    color: white;
+.header button{
+    top: 0px;
     background-color: rgba(0,0,0,0); 
     border-width: 0px;
+    color: white;
+    gap: 30px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
 }
 
-.header{
-    position: relative;
-    width: 1250px;
+.hero{
+    background: url("Netflix-Hintergrund.png");
+    padding: 350px;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero button{
+    background-color: black;
+    border-width: 2px;
+    width: 200px;
     height: 50px;
+    font-size: 25px;
+    font-style: bold;
+    gap: 20px;
+    color: white;
 }
 
-#Support{
-    position: relative;
-    left: 80%;
-    font-size: 30px;
+.feature{
+    display: flex;
+    padding: 50px;
+    background-color: white;
+    margin: 10px;
 }
 
-#About{
-    position: relative;
-    left: 75%;
-    font-size: 30px;
-}
-
-.footer-content{
-    color:white;
+.footer p{
+    color: white;
 }
