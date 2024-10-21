@@ -5,65 +5,121 @@
 }
 
 body {
-    background-color: black;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
 }
 
-.header{
+.header {
     display: flex;
-    padding: 20px;
-    color: white;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #1c1c1c;
     align-items: center;
 }
 
-#Title{
-    text-align: center;
+#Title {
     font-size: 40px;
+    text-align: center;
     flex-grow: 1;
 }
 
-.header button{
-    top: 0px;
-    background-color: rgba(0,0,0,0); 
-    border-width: 0px;
-    color: white;
-    gap: 30px;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
+.right-nav {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
 }
 
-.hero{
-    background: url("Netflix-Hintergrund.png");
-    padding: 350px;
-    width: 100%;
-    height: 0%;
-    text-align: center;
+.right-nav button {
+    background-color: transparent;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none; /* No border for a cleaner look */
+}
+
+.right-nav button:hover {
+    background-color: #333;
+}
+
+.hero {
+    background: url("Netflix-Hintergrund.png") no-repeat center center;
     background-size: cover;
+    height: 80vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.hero button{
-    background-color: black;
-    border-width: 2px;
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
-    font-style: bold;
-    gap: 20px;
+    text-align: center;
     color: white;
 }
 
-.feature{
+.hero-buttons {
     display: flex;
+    gap: 20px; /* Adds spacing between the buttons */
+}
+
+.hero-buttons button {
+    background-color: #e50914;
+    border: none;
+    border-radius: 50px; /* Rounded edges for a modern look */
+    color: white;
+    padding: 15px 50px; /* Larger padding for more emphasis */
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.hero-buttons button:hover {
+    background-color: #b20710;
+    transform: scale(1.05); /* Adds a slight zoom on hover */
+}
+
+.feature {
+    display: flex;
+    justify-content: space-around;
     padding: 50px;
     background-color: white;
-    margin: 10px;
+    color: black;
 }
 
-.footer p{
+.feature a {
+    background-color: #e50914;
+    border-radius: 5px;
     color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.feature a:hover {
+    background-color: #b20710;
+}
+
+.footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p, .footer button {
+    color: white;
+    margin: 5px 0;
+}
+
+.footer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+    background-color: #333;
 }
